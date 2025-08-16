@@ -13,7 +13,7 @@ import './index.css' // Import Tailwind CSS styles
 // ==========================
 
 // Utility: Web Audio tiny sound engine (no external files)
-function useSoundEngine() {
+export default function UseSoundEngine() {
   const ctxRef = useRef(null);
   const ensureCtx = () => {
     if (!ctxRef.current) {
